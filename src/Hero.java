@@ -3,12 +3,15 @@ import java.util.List;
 
 public class Hero {
     public String name;
-    public int health;
-   // public List<Card> deck;
+    public int maxHealth;
+    public int currentHealth;
+    public List<Card> deck;
 
-    public Hero(String name, int health) {
+    public Hero(String name, int maxHealth) {
         this.name = name;
-        this.health = health;
-      //  this.deck = new ArrayList<>();
+        this.maxHealth = maxHealth;
+        this.currentHealth = maxHealth;
+        this.deck = new ArrayList<>();
     }
+    
 }
